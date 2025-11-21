@@ -4,8 +4,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
-  title: "Homli: Family & Home Manager",
-  description: "Manage chores, bills, groceries & calendars for multiple households in one app.",
+  title: "Homli | house organizer",
+  description: "Manage groceries, chores, bills & calendars for multiple households in one app.",
 };
 
 export default function RootLayout({ children }) {
