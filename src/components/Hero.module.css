@@ -4,7 +4,16 @@
   position: relative;
   overflow: hidden;
 }
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px; /* set any height you need */
+  overflow: hidden;
+}
 
+.hero-image {
+  object-fit: cover;
+}
 .gradientBlob1 {
   position: absolute;
   top: 0;
