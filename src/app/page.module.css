@@ -1,0 +1,252 @@
+.main {
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Why Homli Section */
+.whySection {
+  padding: 8rem 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+.whyGrid {
+  display: grid;
+  gap: 5rem;
+  align-items: center;
+}
+
+.whyImageContainer {
+  position: relative;
+}
+
+.blob1 {
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--primary-light);
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.5;
+}
+
+.blob2 {
+  position: absolute;
+  bottom: -2.5rem;
+  right: -2.5rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #f0fdf4;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.5;
+}
+
+.whyImage {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-color: var(--bg-surface);
+  border-radius: 2.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-2xl);
+  border: 4px solid white;
+}
+
+.lifestylePlaceholder {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #F1F5F9 0%, #E2E8F0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lifestyleText {
+  color: var(--text-light);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  transition: transform 0.5s;
+}
+
+.lifestylePlaceholder:hover .lifestyleText {
+  transform: scale(1.1);
+}
+
+.whyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.whyTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.whySubtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.featureRow {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.featureIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.iconBrain { background-color: #f0fdf4; color: #35B933; }
+.iconBolt { background-color: #f0fdf4; color: #35B933; }
+.iconHand { background-color: #f0fdf4; color: #35B933; }
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.featureDesc {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* Download Section */
+.downloadSection {
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--secondary);
+  color: white;
+}
+
+.downloadBg {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-dark);
+  z-index: 0;
+}
+
+.downloadGlow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.2;
+  z-index: 0;
+  transform: translate(33%, -33%);
+}
+
+.downloadContent {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.downloadTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.downloadText {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 3rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.storeButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.storeButton {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transition: var(--transition-base);
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.appStore {
+  background-color: white;
+  color: var(--text-main);
+  box-shadow: var(--shadow-xl);
+}
+
+.appStore:hover {
+  background-color: var(--bg-surface);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-2xl);
+}
+
+.googlePlay {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.googlePlay:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.storeIcon {
+  font-size: 2rem;
+}
+
+.storeTextSmall {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.storeTextLarge {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .whyGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .storeButtons {
+    flex-direction: row;
+  }
+}

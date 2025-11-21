@@ -1,0 +1,235 @@
+.heroSection {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.gradientBlob1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 800px;
+  background-color: var(--primary-light);
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  opacity: 0.4;
+  transform: translate(25%, -25%);
+}
+
+.gradientBlob2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  background-color: #f0fdf4; /* Very Light Green */
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  opacity: 0.6;
+  transform: translate(-25%, 25%);
+}
+
+.heroGrid {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  background-color: var(--primary-light);
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  border: 1px solid rgba(53, 185, 51, 0.1);
+  margin-bottom: 2rem;
+}
+
+.badgeDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ctaGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.trustedBy {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.avatars {
+  display: flex;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--border-light);
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-left: -0.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.trustedText {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.imageWrapper {
+  position: relative;
+  perspective: 1000px;
+}
+
+.appImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-2xl);
+  border: 8px solid white;
+  background: white;
+  transform: rotateY(-12deg) rotateX(5deg);
+  transition: transform 0.7s ease-out;
+}
+
+.imageWrapper:hover .appImage {
+  transform: rotateY(0) rotateX(0);
+}
+
+.floatingCard {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 18rem;
+  display: none;
+  animation: bounce 4s infinite;
+  z-index: 10;
+}
+
+.cardBill {
+  bottom: -2rem;
+  left: -2rem;
+  animation-delay: 0s;
+}
+
+.cardGrocery {
+  top: 2rem;
+  left: -3rem;
+  animation-delay: 1s;
+}
+
+.cardChore {
+  top: 40%;
+  right: -4rem;
+  animation-delay: 2s;
+}
+
+.cardEvent {
+  bottom: 4rem;
+  right: -2rem;
+  animation-delay: 1.5s;
+}
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cardIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--primary-light);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.cardTitle {
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.1rem;
+  font-size: 0.875rem;
+}
+
+.cardSubtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ctaGroup {
+    flex-direction: row;
+  }
+
+  .floatingCard {
+    display: block;
+  }
+}
