@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <div className={styles.logoContainer}>
-            <Image src="/assets/logo.jpg" alt="Homli Logo" fill className="object-cover" />
+            <Image src="/assets/logo.png" alt="Homli Logo" fill className="object-cover" />
           </div>
           <span className={styles.logoText}>Homli</span>
         </Link>

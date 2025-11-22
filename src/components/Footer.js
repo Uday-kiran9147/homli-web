@@ -9,7 +9,7 @@ export default function Footer() {
         <div className={styles.brand}>
           <div className={styles.logoRow}>
             <div className={styles.logoWrapper}>
-               <Image src="/assets/logo.jpg" alt="Homli Logo" fill className="object-cover" />
+               <Image src="/assets/logo.png" alt="Homli Logo" fill className="object-cover" />
             </div>
             <span className={styles.brandName}>Homli</span>
           </div>
