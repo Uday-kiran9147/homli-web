@@ -57,7 +57,7 @@ export default function Hero() {
                  <div className={styles.cardIcon}>⚡</div>
                  <div>
                     <p className={styles.cardTitle}>Bill Alert</p>
-                    <p className={styles.cardSubtitle}>Electricity Due Tomorrow</p>
+                    <p className={styles.cardSubtitle}>Netflix & Electricity Due Tomorrow</p>
                  </div>
               </div>
            </div>
