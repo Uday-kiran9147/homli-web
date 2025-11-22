@@ -5,8 +5,8 @@ export default function Features() {
   const features = [
     {
       iconImage: "/assets/icon-grocery.png",
-      title: "Smart Grocery Lists",
-      description: "Real-time grocery lists for each household. Mark items as 'Urgent' so the person shopping knows exactly what to buy."
+      title: "Live Grocery Lists",
+      description: "Add items individually, and sync across all your members instantly.\n Collaborate in real-time with family members. "
     },
     {
       iconImage: "/assets/icon-calendar.png",
@@ -20,13 +20,13 @@ export default function Features() {
     },
     {
       iconImage: "/assets/icon-grocery.png", // Reusing for now as we only generated 3 specific ones
-      title: "Multi-Family Support",
-      description: "Create or join multiple distinct family groups. Switch between your 'Home,' 'Parents,' or 'Rental' dashboards instantly."
+      title: "Multi-Home Support",
+      description: "Switch between your 'Home,' 'Parents,' or 'Rental' dashboards instantly."
     },
     {
       iconImage: "/assets/icon-calendar.png", // Reusing
-      title: "Chore Tracking",
-      description: "Assign tasks to kids, roommates, or yourself. Rotate chores automatically and track who did what."
+      title: "Chore Assign",
+      description: "Assign tasks to roommates, kids, or yourself. Rotate chores automatically and track who did what."
     },
     {
       iconImage: "/assets/icon-bills.png", // Reusing
